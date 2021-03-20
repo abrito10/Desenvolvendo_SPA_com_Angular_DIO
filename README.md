@@ -4,11 +4,11 @@
 
 Foram criados 5 componentes:heavy_check_mark:
 
-	- cabecalho:heavy_check_mark:
-	- bzr-inicio:heavy_check_mark:
-	- favorito:heavy_check_mark:
-	- favoritos-list:heavy_check_mark:
-	- rodape:heavy_check_mark:
+	- cabecalho
+	- bzr-inicio
+	- favorito
+	- favoritos-list
+	- rodape
 
 Para contemplar todos os requisitos solicitados no desafio, utilizei o meu gosto pessoal por desenhos animados criei umalista com algumas recordacoes de minha infância. Boas lembranças...:tv:
 
