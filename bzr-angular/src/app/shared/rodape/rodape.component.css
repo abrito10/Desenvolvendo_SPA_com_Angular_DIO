@@ -1,0 +1,7 @@
+.primary {
+    color: rgb(255, 255, 255);
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }

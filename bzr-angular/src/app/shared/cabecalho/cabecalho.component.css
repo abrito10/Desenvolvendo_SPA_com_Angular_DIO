@@ -1,0 +1,14 @@
+
+.header-toolbar {
+    text-align: center;
+    justify-content: space-between;
+  }
+
+.app-content {
+    min-height: calc(100vh - 110px);
+  }
+  
+.app-title {
+    text-transform: uppercase;
+  }
+  

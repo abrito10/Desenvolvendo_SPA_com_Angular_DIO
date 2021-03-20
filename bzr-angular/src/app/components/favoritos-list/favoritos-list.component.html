@@ -1,0 +1,26 @@
+<mat-toolbar class="app-title">
+  <mat-card-actions>
+    Event Binding 
+    <button  *ngIf="!exibeFavoritos" 
+              mat-raised-button (click)="exibirFavoritos()"
+              matTooltip="Exibe os meu desenhos favoritos"
+              aria-label="Button that displays a tooltip when focused or hovered over">
+              Exibir </button>
+    <button  *ngIf="exibeFavoritos" 
+              mat-raised-button (click)="ocultarFavoritos()"
+              matTooltip="Oculta os meu desenhos favoritos"
+              aria-label="Button that displays a tooltip when focused or hovered over">
+              Ocultar</button> 
+  </mat-card-actions>
+</mat-toolbar>
+
+<div  class="home-content"  *ngIf="exibeFavoritos">
+    <!--for responsavel pela repeticao dos cards-->  
+  <mat-card class="home-card" *ngFor="let favorito of favoritos">
+    <mat-card-header>
+      <div mat-card-avatar></div>
+      <mat-card-title>{{ favorito.nome}}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image [src]="favorito.imagemUrl"  class="img">
+  </mat-card>
+</div>

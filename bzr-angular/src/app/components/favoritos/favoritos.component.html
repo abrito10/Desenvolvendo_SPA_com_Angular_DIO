@@ -1,0 +1,25 @@
+<div class="main-div">
+    <mat-card class="center width50">
+      <mat-card>
+        <mat-card-content>
+          <div>
+              <div>
+                <mat-form-field appearance="fill">
+                  <mat-label>Two-Way Data Binding</mat-label>
+                  <input matInput [(ngModel)] = "pessoa.nome"> 
+                </mat-form-field>
+                
+                <mat-form-field appearance="fill" class="padding10"> 
+                  <mat-label>Two-Way Data Binding</mat-label>
+                  <input type="number" matInput pattern="[0-9]+$" [(ngModel)] = "pessoa.idade" matInput> 
+                </mat-form-field>                
+              </div>        
+                <p>Meu nome é {{ pessoa.nome}} e tenho {{ pessoa.idade}} anos de idade</p>
+           </div>
+        </mat-card-content>
+      </mat-card>
+    </mat-card>
+<div>
+</div>
+
+<bzr-favoritos-list></bzr-favoritos-list>

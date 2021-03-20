@@ -1,0 +1,18 @@
+<mat-sidenav-container>
+    <mat-sidenav-content>
+      <mat-toolbar color="primary" class="header-toolbar">
+            <button type="button"  mat-icon-button >
+            </button>
+            <span class="app-title">Meus desenhos favoritos</span>
+            <button type="button"  mat-icon-button >
+            </button>
+      </mat-toolbar>
+      <!-- aqui sera injetado os demais componetes-->
+      <div class="app-content">
+            <router-outlet></router-outlet>
+      </div>   
+      <!-- componete do rodape -->
+      <bzr-rodape></bzr-rodape>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+  

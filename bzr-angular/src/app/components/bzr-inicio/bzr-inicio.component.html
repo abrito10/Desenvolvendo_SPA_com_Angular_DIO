@@ -1,0 +1,27 @@
+<div class="main-div">
+  <mat-card class="center width50">
+    <mat-card>
+      <mat-card-content>
+        <div>
+          <mat-form-field appearance="fill">
+            <mat-label>Property Binding</mat-label>
+            <input matInput [value] = "nome"> 
+          </mat-form-field>
+
+          <mat-form-field appearance="fill" class="padding10">
+            <mat-label>Two-Way Data Binding</mat-label>
+            <input matInput [(ngModel)] = "nome"> 
+          </mat-form-field>
+
+          <mat-form-field appearance="fill" class="padding10">
+            <mat-label>{{ nome }}</mat-label>
+            <input matInput readonly="$1">  
+          </mat-form-field>
+        </div>
+        </mat-card-content>
+    </mat-card>
+  </mat-card>
+
+  <bzr-favoritos></bzr-favoritos>
+
+</div>
